@@ -1,2 +1,0 @@
-# WechatAttendance
-wechat small program
