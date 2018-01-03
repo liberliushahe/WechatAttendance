@@ -5,7 +5,35 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#bb00ff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "智慧考勤",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle":"blue",
+    "backgroundColor":"#ffffff",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"resources/images/icons/image.png",
+        "text":"首页"
+      },{
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+      }
+
+    ]
   }
 }

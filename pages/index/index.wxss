@@ -1,28 +1,12 @@
 /**index.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-} 
-.header{
+.container{
+ height: 100%;
+}
+.swiper {
+  height: 360rpx;
   width: 100%;
-  height: 250rpx;
-  background-color: red;
 }
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-.userinfo-nickname {
-  color: #aaa;
+.swiper image {
+  height: 100%;
+  width: 100%;
 }

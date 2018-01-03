@@ -1,9 +1,15 @@
+<!--主容器-->
 <view class="container">
-<view class="header">
+<!--头部轮番图片-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+<block wx:key="movies" wx:for="{{movies}}" wx:for-index="index">
+ <swiper-item>    
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>  
+</block>
+</swiper>
+<!--主题内容-->
+
 
 </view>
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">hello</text>
-  </view>
-</view>
+
