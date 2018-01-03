@@ -4,7 +4,11 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
+<<<<<<< HEAD
     "navigationBarBackgroundColor": "#00BFFF",
+=======
+    "navigationBarBackgroundColor": "#bb00ff",
+>>>>>>> ae0a8df2c282e6a6befea2289a50dcef61749bea
     "navigationBarTitleText": "智慧考勤",
     "navigationBarTextStyle": "white"
   },
@@ -16,6 +20,7 @@
     "list":[
       {
         "pagePath":"pages/index/index",
+<<<<<<< HEAD
         "iconPath":"resources/images/icons/index.png",             "selectedIconPath":"resources/images/icons/index-selected.png",
         "text":"首页"
       },{
@@ -35,6 +40,24 @@
         "iconPath": "resources/images/icons/own.png",
         "selectedIconPath": "resources/images/icons/own-selected.png",
         "text": "我的"
+=======
+        "iconPath":"resources/images/icons/image.png",
+        "text":"首页"
+      },{
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/image.png",
+        "text": "首页1"
+>>>>>>> ae0a8df2c282e6a6befea2289a50dcef61749bea
       }
 
     ]
