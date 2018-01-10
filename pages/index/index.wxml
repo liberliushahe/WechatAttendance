@@ -8,7 +8,71 @@
         </swiper-item>  
 </block>
 </swiper>
-<!--主题内容-->
+<!--主体内容-->
+<scroll-view class="scroll">
+    <view class="menu_container bc_gray">
+     <view class="menu_item" wx:key="menus" wx:for="{{menus}}" wx:for-index="index" wx:for-item="menu">
+     <image class="menu_icon" src="{{menu.url}}"></image>
+     <text class="menu_name">{{menu.name}}</text>
+     </view>
+    </view>
 
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+<view class="detail_container">
+<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
+<view class="detail_name">
+<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+</view>
+</view>
+
+
+
+
+</scroll-view>
+  
+<view class="copyright">
+<view>CopyRight-2017-liushahe</view>
+</view>
 </view>
 
