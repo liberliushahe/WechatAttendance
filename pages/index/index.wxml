@@ -8,71 +8,86 @@
         </swiper-item>  
 </block>
 </swiper>
-<!--主体内容-->
-<scroll-view class="scroll">
-    <view class="menu_container bc_gray">
+<!--快捷菜单-->
+    <view class="menu_container">
      <view class="menu_item" wx:key="menus" wx:for="{{menus}}" wx:for-index="index" wx:for-item="menu">
      <image class="menu_icon" src="{{menu.url}}"></image>
      <text class="menu_name">{{menu.name}}</text>
      </view>
     </view>
-
-<view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
-</view>
+<!--主体内容-->
+<scroll-view class="scroll">
+<view class="detail_container_head">
+<text class="detail_container_head_text">最新消息</text>
 </view>
 <view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+<view  class="detail_left">
+<image class="detail_icon" src="../../resources/images/new.png"></image>
 </view>
+<view class="detail_right">
+<view class="detail_head">
+<text class="detail_head_text">新生代的学者今日访问大学</text>
 </view>
-<view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+<view class="detail_desc">
+<text class="detail_head_text">最近的学术论坛召开</text>
 </view>
+<view class="detail_footer">
+<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
 </view>
-<view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
 </view>
 </view>
 <view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+<view  class="detail_left">
+<image class="detail_icon" src="../../resources/images/new.png"></image>
 </view>
+<view class="detail_right">
+<view class="detail_head">
+<text class="detail_head_text">新生代的学者今日访问大学</text>
 </view>
-<view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+<view class="detail_desc">
+<text class="detail_head_text">最近的学术论坛召开</text>
 </view>
+<view class="detail_footer">
+<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
 </view>
-<view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
 </view>
 </view>
 <view class="detail_container">
-<image class="detail_icon" src="../../resources/images/menu/menu1.png"></image>
-<view class="detail_name">
-<text >测试文档测试文档测试文档测试文档测试文档测试文档</text>
+<view  class="detail_left">
+<image class="detail_icon" src="../../resources/images/new.png"></image>
+</view>
+<view class="detail_right">
+<view class="detail_head">
+<text class="detail_head_text">新生代的学者今日访问大学</text>
+</view>
+<view class="detail_desc">
+<text class="detail_head_text">最近的学术论坛召开</text>
+</view>
+<view class="detail_footer">
+<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
 </view>
 </view>
-
-
-
-
+</view>
+<view class="detail_container">
+<view  class="detail_left">
+<image class="detail_icon" src="../../resources/images/new.png"></image>
+</view>
+<view class="detail_right">
+<view class="detail_head">
+<text class="detail_head_text">新生代的学者今日访问大学</text>
+</view>
+<view class="detail_desc">
+<text class="detail_head_text">最近的学术论坛召开</text>
+</view>
+<view class="detail_footer">
+<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
+</view>
+</view>
+</view>
 </scroll-view>
   
 <view class="copyright">
-<view>CopyRight-2017-liushahe</view>
+<view class="copyright_info">copright-2017-liushahe</view>
 </view>
 </view>
 
