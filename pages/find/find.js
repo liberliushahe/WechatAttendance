@@ -26,7 +26,28 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res.model)
+        console.log(res.pixelRatio)
+        console.log(res.windowWidth)
+        console.log(res.windowHeight)
+        console.log(res.language)
+        console.log(res.version)
+        console.log(res.platform)
+      }
+    })
+    wx.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
 
   /**
@@ -64,3 +85,4 @@ Page({
   
   }
 })
+

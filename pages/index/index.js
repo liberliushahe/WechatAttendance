@@ -48,18 +48,33 @@ Page({
 
   /**
    * 生命周期函数--监听页面显示
+   * 页面显示，提供摇一摇功能
    */
+  isShow:false,
   onShow: function () {
-    
+    var that=this;
+    this.isShow=true;
+    wx.onAccelerometerChange(function(e){
+      if(!that.isShow){
+        return;
+      }
+      if(e.x>1&&e.y>1){
+        wx.showToast({
+          title: '打卡成功',
+          success:'success',
+          duration:2000
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
+   * 摇一摇功能隐藏
    */
   onHide: function () {
-    
+    this.isShow=false;
   },
-
   /**
    * 生命周期函数--监听页面卸载
    */
