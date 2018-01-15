@@ -65,6 +65,21 @@ Page({
           duration:2000
         })
       }
+    }),
+    wx.getSetting({
+      success(res){
+        if(!res.authSetting['scope.userInfo']){
+          wx.authorize({
+            scope: 'scope.userInfo',
+            success(){
+              wx.showModal({
+                title: 'ceshi',
+                content: 'ceshi',
+              })
+            }
+          })
+        }
+      }
     })
   },
 

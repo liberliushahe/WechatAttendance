@@ -1,7 +1,7 @@
 {
   "pages": [
-      "pages/find/find",
       "pages/index/index",
+      "pages/find/find",
       "pages/channel/channel",
       "pages/mime/mime"
   ],

@@ -1,7 +1,24 @@
 <!--主容器-->
 <view class="container">
-
-  
+<!--用户信息-->
+<view class="page-body-info">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view>
+     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+</view>
+<!--用户设置和信息-->
+ <view class="page-body-setting">
+  <view class="page-body-setting-item">
+ 个人信息
+  </view> 
+    <view class="page-body-setting-item">
+  个人信息
+  </view> 
+    <view class="page-body-setting-item">
+  个人信息
+  </view> 
+</view> 
 <view class="copyright">
 <view class="copyright_info">copright-2017-liushahe</view>
 </view>

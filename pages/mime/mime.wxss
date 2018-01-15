@@ -4,10 +4,35 @@
  height: 100%;
  background-color:#EFEFF4;
 }
-
-
-
-
+/**用户头像样式**/
+.page-body-info {
+  padding-bottom: 0;
+  height: 180px;
+  text-align: center;
+  background-color: #fff;
+}
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 30rpx;
+}
+.userinfo-nickname {
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}
+/**用户信息样式**/
+.page-body-setting{
+ margin-top: 6px;
+height: 400px;
+}
+.page-body-setting-item{
+  height: 60px;
+  line-height: 60px;
+ background-color:#fff;
+ margin-top: 3px;
+ font-size: 15px;
+}
 
 /**版权样式**/
 .copyright{
