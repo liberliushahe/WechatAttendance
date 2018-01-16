@@ -31,9 +31,12 @@ height: 400px;
   line-height: 60px;
  background-color:#fff;
  margin-top: 3px;
- font-size: 15px;
+ font-size: 14px;
 }
-
+.userinfoicon{
+  width: 16px;
+  height: 16px;
+}
 /**版权样式**/
 .copyright{
  width: 100%;

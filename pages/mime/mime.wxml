@@ -10,7 +10,7 @@
 <!--用户设置和信息-->
  <view class="page-body-setting">
   <view class="page-body-setting-item">
- 个人信息
+ <image class="userinfoicon" src="{{userinfoicon}}"></image>个人信息
   </view> 
     <view class="page-body-setting-item">
   个人信息
