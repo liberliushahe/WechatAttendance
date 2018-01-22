@@ -10,13 +10,22 @@
 <!--用户设置和信息-->
  <view class="page-body-setting">
   <view class="page-body-setting-item">
- <image class="userinfoicon" src="{{userinfoicon}}"></image>个人信息
+  <view>
+  <image class="userinfoicon" src="{{userinfoicon}}"></image><text>个人信息</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
   </view> 
     <view class="page-body-setting-item">
-  个人信息
+ <view>
+  <image class="userinfoicon" src="{{usercard}}"></image><text>个人打卡</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
   </view> 
     <view class="page-body-setting-item">
-  个人信息
+ <view>
+  <image class="userinfoicon" src="{{usersetting}}"></image><text>个人设置</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
   </view> 
 </view> 
 <view class="copyright">

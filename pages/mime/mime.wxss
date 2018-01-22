@@ -1,7 +1,7 @@
 /* pages/mime/mime.wxss */
 /**主容器**/
 .container{
- height: 100%;
+ height: 80%;
  background-color:#EFEFF4;
 }
 /**用户头像样式**/
@@ -28,14 +28,26 @@ height: 400px;
 }
 .page-body-setting-item{
   height: 60px;
-  line-height: 60px;
  background-color:#fff;
  margin-top: 3px;
- font-size: 14px;
+ font-size: 16px;
+  line-height: 60px;
 }
 .userinfoicon{
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  margin-top: 21px; 
+  height: 18px;
+  margin-right: 8px;
+  margin-left: 8px;
+ float: left;
+}
+.userinfodirection{
+  line-height: 60px;
+  float: right;
+  margin-top: 14px;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
 }
 /**版权样式**/
 .copyright{

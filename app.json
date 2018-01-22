@@ -1,9 +1,9 @@
 {
   "pages": [
-      "pages/index/index",
-      "pages/find/find",
       "pages/channel/channel",
-      "pages/mime/mime"
+    "pages/find/find",
+    "pages/mime/mime",
+   "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

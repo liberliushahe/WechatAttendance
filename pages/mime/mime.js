@@ -6,7 +6,9 @@ Page({
    */
   data: {
     userinfoicon:"../../resources/images/icons/userinfo.png",
-  
+    usercard: "../../resources/images/icons/card.png",
+    usersetting: "../../resources/images/icons/setting.png",
+    big: "../../resources/images/icons/big.png",
   },
 
   /**

@@ -58,7 +58,7 @@
 }
 .detail_container_head_text{
   font-size: 16px;
-  line-height: 16px;
+  line-height: 32px;
   padding-left: 20px;
 }
 .detail_container{
