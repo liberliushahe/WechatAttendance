@@ -20,7 +20,7 @@
 <view class="detail_container_head">
 <text class="detail_container_head_text">最新消息</text>
 </view>
-<view class="detail_container">
+<view class="detail_container" bindtap="getDetail">
 <view  class="detail_left">
 <image class="detail_icon" src="../../resources/images/new.png"></image>
 </view>

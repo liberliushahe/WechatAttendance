@@ -46,8 +46,6 @@ Page({
       success: function(res) {
         var long=res.longitude
         var lat=res.latitude
-        console.log(long)
-        console.log(lat)
         var speed=res.speed
         var markerlong = "markers[" + 0 + "].longitude";
         var markerlat = "markers[" + 0 + "].latitude";

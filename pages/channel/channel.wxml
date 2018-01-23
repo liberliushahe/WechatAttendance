@@ -2,13 +2,17 @@
 <!--主容器-->
 <view class="container">
 <scroll-view>
+<!--音乐容器-->
+<view><text>热门音乐</text></view>
+ <view class="music-container" wx:key="music" wx:for="{{music}}" wx:for-index="index"     wx:for-item="music">
+     <image class="music_icon" src="{{music.icon}}"></image>
+     <text class="music_name">{{music.name}}</text>
+     <image src="{{music.play}}" class="music_play" bindtap="play"></image>
+
+     </view>
 <!--视频容器-->
 <view><text>热门视频</text></view>
- <video class="Video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
-
- <video class="Video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
- <video class="Video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
-
+ <video class="Video" wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video" src="{{video.url}}" poster="{{video.poster}}"></video>
 </scroll-view>
 </view>
 <view class="copyright">

@@ -116,5 +116,11 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  /**
+   * 获取消息详情
+   */
+  getDetail:function(){
+   console.log("hello")
   }
 })
