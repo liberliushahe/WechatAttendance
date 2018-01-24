@@ -1,1 +1,70 @@
 /* pages/calendar/calendar.wxss */
+.wrapper{
+  width: 100%;
+ background-color: #EFEFF4;
+  padding-top: 90rpx;
+
+
+}
+.calendar{
+  width: 90%;
+  margin: auto;
+  height: 1000rpx;
+box-shadow:0px 0px 6rpx 6rpx #778899;
+  background-color: #fff;
+}
+
+/*顶部样式*/
+.calendar-top{
+  padding-top: 5rpx;
+width: 94%;
+margin: auto;
+height: 140rpx;
+}
+.left-calendar{
+float: left;
+font-size:26rpx;
+}
+.right-calendar{
+float: right;
+font-size:28rpx;
+}
+.day{
+ font-size:76rpx; 
+ font-weight: bold;
+}
+.top-content{
+  margin-top: 4rpx;
+    writing-mode: vertical-lr;
+}
+/*中部样式*/
+.calendar-middle{
+width: 94%;
+margin: auto;
+margin-top: 20rpx;
+}
+.middle-image{
+  width: 100%;
+  height: 600rpx;
+}
+.middle-image-content{
+  font-size:28rpx;
+
+  
+}
+/*底部样式*/
+.calendar-bottom{
+  margin-top: 50rpx;
+  padding: 10rpx;
+   font-size:26rpx;
+}
+/*操作样式*/
+.operator{
+   width: 90%;
+  margin: auto;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+.button{
+   background-color: #3399FF; 
+}

@@ -7,12 +7,21 @@
  <view class="music-container" wx:key="music" wx:for="{{music}}" wx:for-index="index"     wx:for-item="music">
      <image class="music_icon" src="{{music.icon}}"></image>
      <text class="music_name">{{music.name}}</text>
-     <image src="{{music.play}}" class="music_play" bindtap="play"></image>
-
+     <image src="{{music.play}}" class="music_play" data-srcId="{{music.src}}"  bindtap="play"></image>
+     
      </view>
 <!--视频容器-->
 <view><text>热门视频</text></view>
- <video class="Video" wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video" src="{{video.url}}" poster="{{video.poster}}"></video>
+<view class="video_wrapper"  wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video">
+ <video class="Video" src="{{video.url}}" poster="{{video.poster}}"></video>
+ <view class="video_desc">{{video.desc}}</view>
+</view>
+<!--视频容器-->
+<view><text>热门直播</text></view>
+<view class="video_wrapper"  wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video">
+ <video class="Video" src="{{video.url}}" poster="{{video.poster}}"></video>
+ <view class="video_desc">{{video.desc}}</view>
+</view>
 </scroll-view>
 </view>
 <view class="copyright">
