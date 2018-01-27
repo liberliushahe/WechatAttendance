@@ -1,50 +1,60 @@
 /**index.wxss**/
+
 .swiper {
   height: 360rpx;
   width: 100%;
 }
+
 .swiper image {
   height: 100%;
   width: 100%;
 }
-.scroll{
+
+.scroll {
   height: auto;
-  width:100%;
+  width: 100%;
 }
-.flex-item{
+
+.flex-item {
   width: 100%;
   height: 200rpx;
   text-align: center;
 }
+
 /**菜单样式**/
-.menu_container{
+
+.menu_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 6px;
   margin-bottom: 4px;
-  background-color:#fff;
+  background-color: #fff;
 }
-.menu_item{
+
+.menu_item {
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24rpx;
+  font-size: 12px;
   box-sizing: border-box;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin-top: 6px;
-  margin-bottom: 20rpx;
+  margin-bottom: 20px;
 }
-.menu_icon{
-   width: 80rpx;
-   height: 80rpx;
-   padding-bottom: 4px;
+
+.menu_icon {
+  width: 80rpx;
+  height: 80rpx;
+  padding-bottom: 4px;
 }
+
 /**文章简介**/
-.article_container{
+
+.article_container {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -54,20 +64,23 @@
   padding-bottom: 14px;
   margin-bottom: 4px;
   margin-top: 4px;
-  border-bottom-width:90%;
+  border-bottom-width: 90%;
 }
-.article_icon{
-   width: 100%;
-   height: 440rpx;
+
+.article_icon {
+  width: 100%;
+  height: 440rpx;
 }
-.article_head{
-   font-size: 32rpx;
-   margin-top: -6px;
-   margin-bottom: 10px;
-   width: 100%;
+
+.article_head {
+  font-size: 16px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  width: 100%;
 }
-.article_footer{
-   font-size: 24rpx;
-   margin-top: 6px;
-   margin-bottom: 10px;
+
+.article_footer {
+  font-size: 24rpx;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }

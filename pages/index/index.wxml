@@ -17,8 +17,8 @@
     </view>
 <!--主体内容-->
 <scroll-view class="scroll">
-
-<view class="article_container" bindtap="getDetail" wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
+<block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article"> 
+<view class="article_container" bindtap="getArticle" >
 
 <view class="article_head">
 <text>{{article.name}}</text>
@@ -30,7 +30,7 @@
 <text>{{article.time}} | {{article.read}}人阅读</text>
 </view>
 </view>
-
+</block>
 </scroll-view>
   
 <view class="copyright">

@@ -28,13 +28,21 @@ Page({
         name: '听歌'
       }
       
-    ],
-    articles:[
+    ]
+    
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    var articles=[
       {
-        name:'大学教授访问某大学，各位师生集体欢迎集体欢迎集体欢迎集体欢迎集体欢迎',
+        name: '大学教授访问某大学，各位师生集体欢迎集体欢迎集体欢迎集体欢迎集体欢迎',
         url: '../../resources/images/new.png',
-        time:'2017年12月23日 13:12:23',
-        read:'2000'
+        time: '2017年12月23日 13:12:23',
+        read: '2000'
       },
       {
         name: '大学教授访问某大学，各位师生集体欢迎',
@@ -49,14 +57,9 @@ Page({
         read: '2000'
       }
     ]
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+    this.setData({
+      articles:articles
+    })
   },
 
   /**
@@ -140,7 +143,11 @@ Page({
   /**
    * 获取消息详情
    */
-  getDetail:function(){
-   console.log("hello")
+  getArticle:function(){
+   wx.navigateTo({
+     url: 'article/article',
+   }
+   
+   )
   }
 })

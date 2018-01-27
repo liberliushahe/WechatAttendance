@@ -4,9 +4,8 @@
     "pages/calendar/calendar",
     "pages/channel/channel",
     "pages/find/find",
-    "pages/mime/mime"
-    
-    
+    "pages/mime/mime",
+    "pages/index/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",
