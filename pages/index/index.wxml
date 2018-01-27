@@ -17,73 +17,20 @@
     </view>
 <!--主体内容-->
 <scroll-view class="scroll">
-<view class="detail_container_head">
-<text class="detail_container_head_text">最新消息</text>
+
+<view class="article_container" bindtap="getDetail" wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
+
+<view class="article_head">
+<text>{{article.name}}</text>
 </view>
-<view class="detail_container" bindtap="getDetail">
-<view  class="detail_left">
-<image class="detail_icon" src="../../resources/images/new.png"></image>
+<view  class="article_middle">
+<image class="article_icon" src="{{article.url}}"></image>
 </view>
-<view class="detail_right">
-<view class="detail_head">
-<text class="detail_head_text">新生代的学者今日访问大学</text>
-</view>
-<view class="detail_desc">
-<text class="detail_head_text">最近的学术论坛召开</text>
-</view>
-<view class="detail_footer">
-<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
+<view class="article_footer">
+<text>{{article.time}} | {{article.read}}人阅读</text>
 </view>
 </view>
-</view>
-<view class="detail_container">
-<view  class="detail_left">
-<image class="detail_icon" src="../../resources/images/new.png"></image>
-</view>
-<view class="detail_right">
-<view class="detail_head">
-<text class="detail_head_text">新生代的学者今日访问大学</text>
-</view>
-<view class="detail_desc">
-<text class="detail_head_text">最近的学术论坛召开</text>
-</view>
-<view class="detail_footer">
-<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
-</view>
-</view>
-</view>
-<view class="detail_container">
-<view  class="detail_left">
-<image class="detail_icon" src="../../resources/images/new.png"></image>
-</view>
-<view class="detail_right">
-<view class="detail_head">
-<text class="detail_head_text">新生代的学者今日访问大学</text>
-</view>
-<view class="detail_desc">
-<text class="detail_head_text">最近的学术论坛召开</text>
-</view>
-<view class="detail_footer">
-<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
-</view>
-</view>
-</view>
-<view class="detail_container">
-<view  class="detail_left">
-<image class="detail_icon" src="../../resources/images/new.png"></image>
-</view>
-<view class="detail_right">
-<view class="detail_head">
-<text class="detail_head_text">新生代的学者今日访问大学</text>
-</view>
-<view class="detail_desc">
-<text class="detail_head_text">最近的学术论坛召开</text>
-</view>
-<view class="detail_footer">
-<text class="detail_head_text">2017年12月23日 13：12：23 | 2000人阅读</text>
-</view>
-</view>
-</view>
+
 </scroll-view>
   
 <view class="copyright">

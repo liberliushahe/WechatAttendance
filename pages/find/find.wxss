@@ -1,22 +1,2 @@
 /* pages/find/find.wxss */
-/**主容器**/
-.container{
- height: 100%;
- background-color:#EFEFF4;
-}
 
-
-
-
-
-/**版权样式**/
-.copyright{
- width: 100%;
- height: 30px;
- font-size: 10px;
- background-color: #EFEFF4;
- text-align: center;
-}
-.copyright_info{
-  padding: 10px;
-}

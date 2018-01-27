@@ -28,6 +28,26 @@ Page({
         name: '听歌'
       }
       
+    ],
+    articles:[
+      {
+        name:'大学教授访问某大学，各位师生集体欢迎集体欢迎集体欢迎集体欢迎集体欢迎',
+        url: '../../resources/images/new.png',
+        time:'2017年12月23日 13:12:23',
+        read:'2000'
+      },
+      {
+        name: '大学教授访问某大学，各位师生集体欢迎',
+        url: '../../resources/images/new.png',
+        time: '2017年12月23日 13:12:23',
+        read: '2000'
+      },
+      {
+        name: '大学教授访问某大学，各位师生集体欢迎',
+        url: '../../resources/images/new.png',
+        time: '2017年12月23日 13:12:23',
+        read: '2000'
+      }
     ]
     
   },
