@@ -1,40 +1,39 @@
 <!--主容器-->
 <view class="container">
-<!--头部轮番图片-->
-<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-<block wx:key="movies" wx:for="{{movies}}" wx:for-index="index">
- <swiper-item>    
-        <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
-        </swiper-item>  
-</block>
-</swiper>
-<!--快捷菜单-->
-    <view class="menu_container">
-     <view class="menu_item" wx:key="menus" wx:for="{{menus}}" wx:for-index="index" wx:for-item="menu">
-     <image class="menu_icon" src="{{menu.url}}"></image>
-     <text class="menu_name">{{menu.name}}</text>
-     </view>
+  <!--头部轮番图片-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:key="movies" wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--快捷菜单-->
+  <view class="menu_container">
+    <view class="menu_item" wx:key="menus" wx:for="{{menus}}" wx:for-index="index" wx:for-item="menu">
+      <image class="menu_icon" src="{{menu.url}}"></image>
+      <text class="menu_name">{{menu.name}}</text>
     </view>
-<!--主体内容-->
-<scroll-view class="scroll">
-<block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article"> 
-<view class="article_container" data-articleId="{{article.id}}" bindtap="getArticle" >
+  </view>
+  <!--主体内容-->
+  <scroll-view class="scroll">
+    <block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
+      <view class="article_container" data-articleId="{{article.id}}" bindtap="getArticle">
 
-<view class="article_head">
-<text>{{article.name}}</text>
-</view>
-<view  class="article_middle">
-<image class="article_icon" src="{{article.url}}"></image>
-</view>
-<view class="article_footer">
-<text>{{article.time}} | {{article.read}}人阅读</text>
-</view>
-</view>
-</block>
-</scroll-view>
-  
-<view class="copyright">
-<view class="copyright_info">copright-2017-liushahe</view>
-</view>
-</view>
+        <view class="article_head">
+          <text>{{article.name}}</text>
+        </view>
+        <view class="article_middle">
+          <image class="article_icon" src="{{article.url}}"></image>
+        </view>
+        <view class="article_footer">
+          <text>{{article.time}} | {{article.read}}人阅读</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
 
+  <view class="copyright">
+    <view class="copyright_info">copright-2017-liushahe</view>
+  </view>
+</view>

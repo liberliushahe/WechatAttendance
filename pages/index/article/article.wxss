@@ -4,22 +4,32 @@
   height: 220px;
 }
 .description{
-  font-size: 16px;
+  font-size: 12px;
+  padding-left: 10px;
 }
 .article-name{
   font-size: 25px;
+  padding-left: 10px;
 }
 .article-content{
   padding: 10px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
 }
-.audio{
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  left: 50%;
-  margin-top: 66px;
-  margin-left: -24px;
-  opacity: 0.7;
+/*收藏和分享*/
+.quick-operator{
+  display: flex;
+float: right;
+margin-right: 10px;
+margin-bottom: 20px;
+}
+.collection{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.share{
+  width: 24px;
+  height: 24px;
+  
 }
