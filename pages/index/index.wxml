@@ -1,3 +1,4 @@
+<import src="index-item/index-item-template.wxml" />
 <!--主容器-->
 <view class="container">
   <!--头部轮番图片-->
@@ -19,16 +20,7 @@
   <scroll-view class="scroll">
     <block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
       <view class="article_container" data-articleId="{{article.id}}" bindtap="getArticle">
-
-        <view class="article_head">
-          <text>{{article.name}}</text>
-        </view>
-        <view class="article_middle">
-          <image class="article_icon" src="{{article.url}}"></image>
-        </view>
-        <view class="article_footer">
-          <text>{{article.time}} | {{article.read}}人阅读</text>
-        </view>
+        <template is="indexItem" data="{{article}}" />
       </view>
     </block>
   </scroll-view>

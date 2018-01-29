@@ -7,6 +7,9 @@
   font-size: 12px;
   padding-left: 10px;
 }
+.article-name-wrapper{
+  margin-top: 20px;
+}
 .article-name{
   font-size: 25px;
   padding-left: 10px;
@@ -18,7 +21,6 @@
 }
 /*收藏和分享*/
 .quick-operator{
-  display: flex;
 float: right;
 margin-right: 10px;
 margin-bottom: 20px;
@@ -32,4 +34,17 @@ margin-bottom: 20px;
   width: 24px;
   height: 24px;
   
+}
+/*点赞*/
+.assist-wrapper{
+  text-align: center;
+  height: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+   background-color:#EFEFF4;
+}
+.assist{
+  width: 64px;
+  height: 64px;
+
 }

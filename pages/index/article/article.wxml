@@ -10,7 +10,7 @@
   <image class="collection" src="../../../resources/images/icons/collection.png"></image>
    <image class="share" src="../../../resources/images/icons/share.png"></image>
   </view>
-  <view>
+  <view class="article-name-wrapper">
     <text class="article-name">大漠孤烟</text>
   </view>
 
@@ -20,5 +20,9 @@
 搭建神经网络就像使用积木搭建宝塔一样。在PaddlePaddle中，layer是我们的积木，而神经网络是我们要搭建的宝塔。我们使用不同的layer进行组合，来搭建神经网络。 宝塔的底端需要坚实的基座来支撑，同样，神经网络也需要一些特定的layer作为输入接口，来完成网络的训练。
 搭建神经网络就像使用积木搭建宝塔一样。在PaddlePaddle中，layer是我们的积木，而神经网络是我们要搭建的宝塔。我们使用不同的layer进行组合，来搭建神经网络。 宝塔的底端需要坚实的基座来支撑，同样，神经网络也需要一些特定的layer作为输入接口，来完成网络的训练。
 </text>
+<view class="assist-wrapper">
+<image class="assist" src="../../../resources/images/icons/collection.png"></image>
+</view>
   </view>
+
 </view>

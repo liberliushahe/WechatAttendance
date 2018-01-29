@@ -1,0 +1,18 @@
+
+.article_icon {
+  width: 100%;
+  height: 440rpx;
+}
+
+.article_head {
+  font-size: 16px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.article_footer {
+  font-size: 24rpx;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
