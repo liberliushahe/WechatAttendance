@@ -1,3 +1,4 @@
+var articleData = require('../../data/article-data.js')
 Page({
 
   /**
@@ -37,31 +38,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var articles=[
-      {
-        id:0,
-        name: '大学教授访问某大学，各位师生集体欢迎集体欢迎集体欢迎集体欢迎集体欢迎',
-        url: '../../resources/images/new.png',
-        time: '2017年12月23日 13:12:23',
-        read: '2000'
-      },
-      {
-        id:1,
-        name: '大学教授访问某大学，各位师生集体欢迎',
-        url: '../../resources/images/new.png',
-        time: '2017年12月23日 13:12:23',
-        read: '2000'
-      },
-      {
-        id:2,
-        name: '大学教授访问某大学，各位师生集体欢迎',
-        url: '../../resources/images/new.png',
-        time: '2017年12月23日 13:12:23',
-        read: '2000'
-      }
-    ]
     this.setData({
-      articles:articles
+      articles: articleData.articlesList
     })
   },
 
@@ -153,5 +131,13 @@ Page({
    }
    
    )
+  },
+  /**
+   * 图片错误默认
+   */
+  errorFunction: function () {
+    this.setData({
+     
+    })
   }
 })

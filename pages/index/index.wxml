@@ -19,7 +19,7 @@
   <!--主体内容-->
   <scroll-view class="scroll">
     <block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
-      <view class="article_container" data-articleId="{{article.id}}" bindtap="getArticle">
+      <view class="article_container" data-articleId="{{article.id}}" catchtap="getArticle">
         <template is="indexItem" data="{{article}}" />
       </view>
     </block>

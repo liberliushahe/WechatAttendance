@@ -1,4 +1,5 @@
 // pages/calendar/calendar.js
+var util = require('../../utils/util.js')
 Page({
   takePhoto() {
     const ctx = wx.createCameraContext()
@@ -14,18 +15,46 @@ Page({
   error(e) {
     console.log(e.detail)
   },
+  currentTime:function () {
+    var that = this
+  
+    var date = util.formatTime(new Date)
+    var time = date.substring(10)
+    that.setData({
+      time:time
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-  
+    year:"2018年 星期四 1",
+    day:"25",
+    time:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that=this
+    var date=util.formatTime(new Date)
+    var year= date.substring(0,7)
+    var day=date.substring(8,10)
+    var time=date.substring(10)
+    that.setData({
+      year:year,
+      day:day
+
+    })
+    setInterval(function () {
+      var date = util.formatTime(new Date)
+      var time = date.substring(10)
+      that.setData({
+      time:time
+      })
+    }, 1000)
+   
   },
 
   /**
@@ -76,4 +105,5 @@ Page({
   onShareAppMessage: function () {
   
   }
+
 })

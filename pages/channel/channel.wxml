@@ -1,29 +1,39 @@
 <!--pages/channel/channel.wxml-->
 <!--主容器-->
 <view class="container">
-<scroll-view>
+
 <!--音乐容器-->
-<view><text>热门音乐</text></view>
- <view class="music-container" wx:key="music" wx:for="{{music}}" wx:for-index="index"     wx:for-item="music">
-     <image class="music_icon" src="{{music.icon}}"></image>
-     <text class="music_name">{{music.name}}</text>
-     <image src="{{music.play}}" class="music_play" data-srcId="{{music.src}}"  bindtap="play"></image>
-     
-     </view>
+<view class="channel-title"><text>热门音乐</text></view>
+ <view class="music_container" >
+ <view class="music-item" wx:key="music" wx:for="{{music}}" wx:for-index="index"  wx:for-item="music">
+
+ <image class="music_icon" src="{{music.icon}}"></image>
+
+ <text class="music_name">{{music.name}}</text>
+<image  class="play" src="{{music.isplay?'../../resources/images/icons/start.png':'../../resources/images/icons/play.png'}}" data-srcId="{{music.id}}" catchtap="playMusic"></image>
+
+ </view>    
+ </view>
+<!--图书容器-->
+<view class="channel-title"><text>热门图书</text></view>
+ <view class="music_container" >
+ <view class="music-item" wx:key="book" wx:for="{{book}}" wx:for-index="index"     wx:for-item="book">
+ <image class="music_icon" src="{{book.icon}}"></image>
+ <text class="music_name">{{book.name}}</text>
+ </view>    
+ </view>
 <!--视频容器-->
-<view><text>热门视频</text></view>
-<view class="video_wrapper"  wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video">
- <video class="Video" src="{{video.url}}" poster="{{video.poster}}"></video>
- <view class="video_desc">{{video.desc}}</view>
+<view class="channel-title"><text>热门视频</text></view>
+ <view class="music_container" >
+ <view class="video_item" wx:key="music" wx:for="{{music}}" wx:for-index="index"     wx:for-item="music">
+ <image class="video_icon" src="{{music.icon}}"></image>
+ <text class="video_name">{{music.name}}</text>
+ </view>    
+ </view>
+<!--主容器-->
 </view>
-<!--视频容器-->
-<view><text>热门直播</text></view>
-<view class="video_wrapper"  wx:key="video" wx:for="{{video}}" wx:for-index="index" wx:for-item="video">
- <video class="Video" src="{{video.url}}" poster="{{video.poster}}"></video>
- <view class="video_desc">{{video.desc}}</view>
-</view>
-</scroll-view>
-</view>
+
+<!--版权信息-->
 <view class="copyright">
 <view class="copyright_info">copright-2017-liushahe</view>
 </view>

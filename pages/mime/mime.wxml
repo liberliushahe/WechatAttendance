@@ -9,13 +9,13 @@
 </view>
 <!--用户设置和信息-->
  <view class="page-body-setting">
-  <view class="page-body-setting-item">
+  <view class="page-body-setting-item" catchtap="owninfo">
   <view>
   <image class="userinfoicon" src="{{userinfoicon}}"></image><text>个人信息</text>
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
-    <view class="page-body-setting-item">
+    <view class="page-body-setting-item" catchtap="owncard">
  <view>
   <image class="userinfoicon" src="{{usercard}}"></image><text>个人打卡</text>
    <image class="userinfodirection" src="{{big}}"></image>
@@ -24,6 +24,12 @@
     <view class="page-body-setting-item">
  <view>
   <image class="userinfoicon" src="{{usersetting}}"></image><text>个人设置</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
+  </view> 
+  <view class="page-body-setting-item">
+ <view>
+  <image class="userinfoicon" src="{{usersetting}}"></image><text>个人收藏</text>
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 

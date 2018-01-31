@@ -1,0 +1,14 @@
+/* pages/mime/card/card.wxss */
+.card-head{
+  text-align: center;
+}
+.table-head{
+  text-align: center;
+}
+.tr{
+  padding: 10px;
+}
+.td{
+padding: 6px;
+
+}

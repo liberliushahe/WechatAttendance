@@ -12,7 +12,7 @@
 }
 .article-name{
   font-size: 25px;
-  padding-left: 10px;
+
 }
 .article-content{
   padding: 10px;
@@ -44,7 +44,16 @@ margin-bottom: 20px;
    background-color:#EFEFF4;
 }
 .assist{
-  width: 64px;
-  height: 64px;
-
+  width: 58px;
+  height: 58px;
+}
+.assist-count{
+  display: absolute;
+  color: #fff;
+  width: 50px;
+  margin: auto;
+   overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-top: -53px;
 }

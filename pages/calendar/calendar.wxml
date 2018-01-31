@@ -11,13 +11,14 @@
 </text>
 </view>
 <view class="right-calendar">
-2018年 星期四 1/<text class="day">25</text> 
+{{year}}/<text class="day">{{day}}</text> 
 </view>
 </view>
 <!--中部-->
 <view class="calendar-middle">
 <image class="middle-image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516793466560&di=19988182e7ccb15a08f3c1bb0ea745bb&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F9f2f070828381f30ce8e5591af014c086e06f077.jpg"></image>
 <view class="middle-image-content">新年好，大家大吉大利，阖家欢乐</view>
+<view>当前时间：{{time}}</view>
 </view>
 <!--下部-->
 <view class="calendar-bottom">

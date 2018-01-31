@@ -1,44 +1,64 @@
 // pages/channel/channel.js
-var isPlay = true
-Page({
 
+Page({
+  play: "../../resources/images/icons/play.png",
   /**
    * 页面的初始数据
    */
   data: {
+    playing: false,
     music: [{
-      icon: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516708383412&di=d2094b79ebe4bb99e0590895f112cf61&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F91%2F19i58PICnAh_1024.jpg",
-      name: "天涯-只要有你",
-      src: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46",
-      play: "../../resources/images/icons/play.png"
+      id: 0,
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001TEc6V0kjpVC.jpg?max_age=2592000",
+      name: "夜夜夜夜",
+      singer: "齐秦",
+      src: "http://ws.stream.qqmusic.qq.com/C100003507bR0gDKBm.m4a?fromtag=38",
+      isplay: false
     },
     {
-      icon: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516708383412&di=d2094b79ebe4bb99e0590895f112cf61&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F91%2F19i58PICnAh_1024.jpg",
-      name: "吴征宇-你的选择",
-      src: "http://sc1.111ttt.cn/2017/1/11/11/304112004168.mp3",
-      play: "../../resources/images/icons/play.png"
+      id: "1",
+      src: "http://ws.stream.qqmusic.qq.com/C100003GdCmG4NkEOR.m4a?fromtag=38",
+      name: "鬼迷心窍",
+      singer: "李宗盛",
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000002xOmp62kqSic.jpg?max_age=2592000",
+      isplay: false
     },
     {
-      icon: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516708383412&di=d2094b79ebe4bb99e0590895f112cf61&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F91%2F19i58PICnAh_1024.jpg",
-      name: "刘宇-看透爱情看透你",
-      src: "  http://sc1.111ttt.cn/2017/1/11/11/304112002493.mp3",
-      play: "../../resources/images/icons/play.png"
+      id: "2",
+      src: "http://ws.stream.qqmusic.qq.com/C100004HLusI2lLjZy.m4a?fromtag=38",
+      name: "女儿情",
+      singer: "万晓利",
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004Wv5BO30pPc0.jpg?max_age=2592000",
+      isplay: false
     },
     {
-      icon: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516708383412&di=d2094b79ebe4bb99e0590895f112cf61&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F91%2F19i58PICnAh_1024.jpg",
-      name: "刘宇-看透爱情看透你",
-      src: "  http://sc1.111ttt.cn/2017/1/11/11/304112002493.mp3",
-      play: "../../resources/images/icons/play.png"
+      id: "3",
+      src: "http://ws.stream.qqmusic.qq.com/C100002mWVx72p8Ugp.m4a?fromtag=38",
+      name: "恋恋风尘",
+      singer: "老狼",
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001VaXQX1Z1Imq.jpg?max_age=2592000",
+      isplay: false
     },
     {
-      icon: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516708383412&di=d2094b79ebe4bb99e0590895f112cf61&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F91%2F19i58PICnAh_1024.jpg",
-      name: "刘宇-看透爱情看透你",
-      src: "  http://sc1.111ttt.cn/2017/1/11/11/304112002493.mp3",
-      play: "../../resources/images/icons/play.png"
+      id: "4",
+      src: "http://ws.stream.qqmusic.qq.com/C100000Zn0vS4fKKo8.m4a?fromtag=38",
+      name: "沉默是金",
+      singer: "张国荣",
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000003at0mJ2YrR2H.jpg?max_age=2592000",
+      isplay: false
+    },
+    {
+      id: "5",
+      src: "http://ws.stream.qqmusic.qq.com/C100002I8eGJ28BI17.m4a?fromtag=38",
+      name: "朋友",
+      singer: "谭咏麟",
+      icon: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004eGsCN3SUheO.jpg?max_age=2592000",
+      isplay: false
     }
 
     ],
     video: [{
+
       url: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
       poster: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516706638851&di=bbb6690ff69ba5a7a39ab8823f727f5f&imgtype=0&src=http%3A%2F%2F3gimg.qq.com%2Fdaxue_qq_com%2Fimage%2F201502%2F1423038769903.png",
       desc: "微信大学公开课"
@@ -63,9 +83,35 @@ Page({
       poster: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516706638851&di=bbb6690ff69ba5a7a39ab8823f727f5f&imgtype=0&src=http%3A%2F%2F3gimg.qq.com%2Fdaxue_qq_com%2Fimage%2F201502%2F1423038769903.png",
       desc: "微信大学公开课"
     }
+    ],
+    book: [
+      {
+        icon: "http://img0.imgtn.bdimg.com/it/u=315528357,3124662951&fm=27&gp=0.jpg",
+        name: "明朝那些事"
 
+      },
+      {
+        icon: "http://img0.imgtn.bdimg.com/it/u=315528357,3124662951&fm=27&gp=0.jpg",
+        name: "明朝那些事"
 
+      },
+      {
+        icon: "http://img0.imgtn.bdimg.com/it/u=315528357,3124662951&fm=27&gp=0.jpg",
+        name: "明朝那些事"
 
+      },
+      {
+        icon: "http://img2.imgtn.bdimg.com/it/u=3898590040,2658751400&fm=27&gp=0.jpg",
+        name: "文心雕龙"
+      },
+      {
+        icon: "http://img2.imgtn.bdimg.com/it/u=3898590040,2658751400&fm=27&gp=0.jpg",
+        name: "文心雕龙"
+      },
+      {
+        icon: "http://img2.imgtn.bdimg.com/it/u=3898590040,2658751400&fm=27&gp=0.jpg",
+        name: "文心雕龙"
+      }
 
     ]
 
@@ -127,30 +173,37 @@ Page({
 
   },
   /**音频函数 */
-
-
-  play: function (event) {
-    var src = event.currentTarget.dataset.srcid
-
-    console.log(src)
-    const innerAudioContext = wx.createInnerAudioContext()
-    innerAudioContext.autoplay = true
-    innerAudioContext.src = src
-    if (isPlay) {
-      isPlay = false
-
-      innerAudioContext.onPlay()
-
+  playMusic: function (event) {
+    var that = this
+    var id = event.currentTarget.dataset.srcid
+    var music = that.data.music[id]
+    const backgroundAudioManager = wx.getBackgroundAudioManager()
+    backgroundAudioManager.title = music.name
+    backgroundAudioManager.epname = music.name
+    backgroundAudioManager.singer = music.singer
+    backgroundAudioManager.coverImgUrl = music.url
+    backgroundAudioManager.src = music.src
+    var play = that.data.music[id].isplay
+    var isplay = "music[" + id + "].isplay";
+    if (!play) {
+      that.setData({
+        [isplay]: true
+      })
     } else {
-      isPlay = true
-      innerAudioContext.onPause()
-      console.log('停止播放')
+      that.setData({
+        [isplay]: false
+      })
+      backgroundAudioManager.stop()
     }
-
-    innerAudioContext.onError((res) => {
-      console.log(res.errMsg)
-
+    backgroundAudioManager.onEnded(function(e){
+      that.setData({
+        [isplay]: false
+      })
     })
+
+    
+      
+    
   }
 
 })

@@ -1,11 +1,11 @@
 <template name="indexItem">
 <view class="article_head">
-  <text>{{article.name}}</text>
+  <text>{{article.title}}</text>
 </view>
 <view class="article_middle">
-  <image class="article_icon" src="{{article.url}}"></image>
+  <image class="article_icon" src="{{article.url}}" binderror="errorFunction"></image>
 </view>
 <view class="article_footer">
-  <text>{{article.time}} | {{article.read}}人阅读</text>
+  <text>{{article.date}} | {{article.count}}人阅读</text>
 </view>
 </template>
