@@ -1,2 +1,83 @@
-<!--pages/mime/info/info.wxml-->
-<text>个人信息</text>
+<!--主容器-->
+<view class="info-container">
+
+<!--用户信息-->
+
+ <view class="page-body-setting">
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">  <text>昵称:  </text></view>
+  <view class="info-text"> 天涯商盟</view>
+  </view>
+  </view>
+
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">  <text>姓名:  </text></view>
+  <view class="info-text"> <input class="input-text" /></view>
+  </view>
+  </view>
+
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">性别:</view>
+  <view class="info-text">  <text>男</text></view>
+  </view>
+  </view>
+
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name"> 地址:</view>
+  <view class="info-text">  <input class="input-text" /></view>
+  </view>
+  </view>
+
+    <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">行业:</view>
+  <view class="info-text"> <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+     {{array[index]}}
+    </view>
+  </picker></view>
+  </view>
+  </view>
+
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">号码:</view>
+  <view class="info-text">  <input class="input-text" maxlength="10" /></view>
+  </view>
+  </view>
+
+  <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">生日:</view>
+  <view class="info-text">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+     2017-1-2
+    </view>
+  </picker>
+  
+  
+  </view>
+  </view>
+  </view>
+
+    <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">公司:</view>
+  <view class="info-text"> <input class="input-text" /></view>
+  </view>
+  </view>
+
+    <view class="page-body-setting-item" >
+  <view class="own-info-item">
+  <view class="info-name">职位:</view>
+  <view class="info-text">  <input class="input-text" /></view>
+  </view>
+  </view>
+  </view>   
+
+</view>

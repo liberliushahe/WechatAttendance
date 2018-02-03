@@ -1,14 +1,36 @@
 /* pages/mime/card/card.wxss */
 .card-head{
   text-align: center;
+  font-size: 18px;
 }
-.table-head{
+
+.th{
+  width:50%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  justify-content: center;
   text-align: center;
+  background: #00BFFF;
+  color: #fff;
 }
 .tr{
-  padding: 10px;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .td{
-padding: 6px;
-
+ width:50%;
+justify-content: center;
+text-align: center;
+}
+.bg-odd{
+  background: #E6F3F9;
+}
+.bg-even{
+  background: #FFFFFF;
 }

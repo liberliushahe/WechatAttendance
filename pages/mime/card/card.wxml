@@ -1,28 +1,55 @@
 <!--pages/mime/card/card.wxml-->
 <view class="container">
-<view calss="card-head">
+<view class="card-head">
 <text>打卡数据</text>
 </view>
 
 <view class="table-head">
 <view class="tr">
-<text class="td">时间</text>
-<text class="td">地点</text>
+<view class="th">时间</view>
+<view class="th">地点</view>
 </view>
 </view>
 
 
-<view class="table-content">
-<view class="tr">
-<text class="td">2018-1-31 12:12:13</text>
-<text class="td">甘肃兰州</text>
+<view class="tr bg-odd">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
 </view>
+
+
+
+<view class="tr bg-even">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
 </view>
-<view class="table-content">
-<view class="tr">
-<text class="td">2018-1-31 12:12:13</text>
-<text class="td">甘肃兰州</text>
+
+
+<view class="tr bg-odd">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
 </view>
+
+
+
+<view class="tr bg-even">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
 </view>
+
+<view class="tr bg-odd">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
+</view>
+
+
+
+<view class="tr bg-even">
+<view class="td">2018-1-31 12:12:13</view>
+<view class="td">甘肃兰州城关区365号</view>
+</view>
+
+
+
 </view>
 
