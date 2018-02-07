@@ -1,5 +1,6 @@
 // pages/calendar/calendar.js
 var util = require('../../utils/util.js')
+var bmap = require('../../libs/bmap-wx.min.js');
 Page({
   takePhoto() {
     const ctx = wx.createCameraContext()
@@ -30,7 +31,8 @@ Page({
   data: {
     year:"2018年 星期四 1",
     day:"25",
-    time:""
+    time:"",
+    weatherData: ''
   },
 
   /**
@@ -42,11 +44,28 @@ Page({
     var year= date.substring(0,7)
     var day=date.substring(8,10)
     var time=date.substring(10)
-    that.setData({
-      year:year,
-      day:day
+    // 新建百度地图对象 
+    var BMap = new bmap.BMapWX({
+      ak: 'UfOGxkLRO2VKPCZGDLpQrFvYqRlCFSer'
+    });
+    var fail = function (data) {
+      console.log(data)
+    };
+    var success = function (data) {
+      var weatherData = data.currentWeather[0];
+      weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
+      that.setData({
+        weatherData: weatherData,
+        year: year,
+        day: day
+      }); 
+    }
+    // 发起weather请求 
+    BMap.weather({
+      fail: fail,
+      success: success
+    });
 
-    })
     setInterval(function () {
       var date = util.formatTime(new Date)
       var time = date.substring(10)
@@ -54,7 +73,8 @@ Page({
       time:time
       })
     }, 1000)
-   
+
+    
   },
 
   /**

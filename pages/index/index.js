@@ -41,6 +41,19 @@ Page({
     this.setData({
       articles: articleData.articlesList
     })
+    wx.request({
+      url: 'https://v.juhe.cn/toutiao/index?type=top&key=5c83c9ca8876503025844c88315cace1',
+      method: "GET",
+      success: function (res) {
+        console.log(res)
+      },
+      fail: function () {
+        console.log("failed")
+      },
+      complete: function () {
+
+      }
+    })
   },
 
   /**

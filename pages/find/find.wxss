@@ -1,2 +1,9 @@
-/* pages/find/find.wxss */
+.map_container{ 
+    height: 300px; 
+    width: 100%; 
+} 
 
+.map { 
+    height: 1300rpx; 
+    width: 100%; 
+} 
