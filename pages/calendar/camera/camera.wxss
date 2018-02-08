@@ -1,0 +1,12 @@
+.primarybutton{
+  margin-top: 6px;
+}
+.preview{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.image{
+  width: 100%;
+  height: 300px;
+}

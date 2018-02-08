@@ -41,3 +41,13 @@
 .input-text{
   margin-top: 20rpx;
 }
+.button{
+  margin-top: 8px;
+ background-color:#00BFFF;
+ color: #FFF;
+ width: 96%;
+ margin-bottom: 10px;
+}
+.button-hover {
+  background-color: green;
+}

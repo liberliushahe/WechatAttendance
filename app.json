@@ -1,17 +1,15 @@
 {
   "pages": [
-        "pages/index/index",
+    "pages/index/index",
+    "pages/calendar/camera/camera",
     "pages/mime/info/info",
     "pages/mime/card/card",
-
     "pages/channel/channel",
     "pages/index/article/article",
-    
     "pages/calendar/calendar",
     "pages/find/find",
-    "pages/mime/mime"
-    
-   
+    "pages/mime/mime",
+    "pages/calendar/photo/photo"
   ],
   "window": {
     "backgroundTextStyle": "light",

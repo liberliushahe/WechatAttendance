@@ -53,7 +53,7 @@ Page({
     };
     var success = function (data) {
       var weatherData = data.currentWeather[0];
-      weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
+      weatherData = '城市：' + weatherData.currentCity + '  ' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '  ' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '  ' + '风力：' + weatherData.wind + '\n';
       that.setData({
         weatherData: weatherData,
         year: year,
@@ -118,12 +118,20 @@ Page({
   onReachBottom: function () {
   
   },
-
-  /**
-   * 用户点击右上角分享
+    /**
+   * 拍照
    */
-  onShareAppMessage: function () {
-  
+  takePicture: function () {
+    wx.navigateTo({
+      url: 'camera/camera',
+    })
+  },
+    /**
+   * 上传图片
+   */
+  uploadImage: function () {
+    wx.navigateTo({
+      url: 'photo/photo',
+    })
   }
-
 })

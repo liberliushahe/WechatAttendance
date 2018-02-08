@@ -1,0 +1,19 @@
+.addphoto {
+  width: 128px;
+  height: 128px;
+  background-color: gainsboro;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 64px;
+  height: 64px;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.uploadphoto {
+  width: 128px;
+  height: 128px;
+}

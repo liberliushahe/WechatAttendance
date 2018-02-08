@@ -1,0 +1,8 @@
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button class="primarybutton" type="primary" bindtap="takePhoto">拍照</button>
+<view class="preview">
+<image mode="widthFix" class="image" src="{{src}}"></image>
+</view>
+
+
+<button class="primarybutton"  type="primary" bindtap="takePhoto">确定</button>

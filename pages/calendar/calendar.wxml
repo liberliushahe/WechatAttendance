@@ -1,5 +1,5 @@
 <!--pages/calendar/calendar.wxml-->
-<scroll-view class="wrapper">
+<view class="wrapper">
 <view class="calendar">
 <!--顶部-->
 <view class="calendar-top">
@@ -29,7 +29,12 @@
 </view>
 </view>
 <view class="operator">
-<button class="button">上传图片</button>
+<button class="button" catchtap="uploadImage">上传图片</button>
 </view>
 
-</scroll-view>
+<view class="operator">
+<button class="button" catchtap="takePicture">拍照</button>
+</view>
+
+
+</view>
