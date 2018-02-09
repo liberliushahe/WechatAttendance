@@ -33,6 +33,27 @@
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
+  <view class="page-body-setting-item" catchtap="ownrun">
+ <view>
+  <image class="userinfoicon" src="{{usersetting}}"></image><text>个人运动</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
+  </view> 
+
+ <view class="page-body-setting-item" catchtap="ownupload">
+ <view>
+  <image class="userinfoicon" src="{{usersetting}}"></image><text>个人上传</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
+  </view> 
+  <view class="contact">
+<contact-button 
+  size="20"
+  session-from="weapp"
+>
+</contact-button>微信客服
+  </view>
+
 </view> 
 <view class="copyright">
 <view class="copyright_info">copright-2017-liushahe</view>

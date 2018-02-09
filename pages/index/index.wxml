@@ -9,21 +9,22 @@
       </swiper-item>
     </block>
   </swiper>
+
   <!--快捷菜单-->
   <view class="menu_container">
     <view class="menu_item" wx:key="menus" wx:for="{{menus}}" wx:for-index="index" wx:for-item="menu">
-      <image class="menu_icon" src="{{menu.url}}"></image>
+      <image class="menu_icon" src="{{menu.url}}" catchtap="menuevent" data-menuId="{{menu.id}}"></image>
       <text class="menu_name">{{menu.name}}</text>
     </view>
   </view>
   <!--主体内容-->
-  <scroll-view class="scroll">
+  <view class="scroll">
     <block wx:key="articles" wx:for="{{articles}}" wx:for-index="index" wx:for-item="article">
       <view class="article_container" data-articleId="{{article.id}}" catchtap="getArticle">
         <template is="indexItem" data="{{article}}" />
       </view>
     </block>
-  </scroll-view>
+  </view>
 
   <view class="copyright">
     <view class="copyright_info">copright-2017-liushahe</view>

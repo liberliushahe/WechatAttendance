@@ -1,0 +1,21 @@
+<view class="container">
+<view class="upload-item">
+<view class="upload-item-content">
+<image class="uploadimage" src="../../../resources/images/new.png"></image>
+<view class="upload-time">2017-12-12 12:12:12</view>
+</view>
+</view>
+<view class="upload-item">
+<view class="upload-item-content">
+<image class="uploadimage" src="../../../resources/images/new.png"></image>
+<view class="upload-time">2017-12-12 12:12:12</view>
+</view>
+</view>
+
+<view class="upload-item">
+<view class="upload-item-content">
+<image class="uploadimage" src="../../../resources/images/new.png"></image>
+<view class="upload-time">2017-12-12 12:12:12</view>
+</view>
+</view>
+</view>

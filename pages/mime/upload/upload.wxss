@@ -1,0 +1,23 @@
+.upload-item{
+  height: 130px;
+  width: 100%;
+  margin-top: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.upload-item-content{
+    display: flex;
+  flex-direction:row;
+}
+.uploadimage{
+  width: 120px;
+  height: 100px;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-right: 20px;
+}
+.upload-time{
+   margin-top: 8px;
+   font-size: 16px;
+}

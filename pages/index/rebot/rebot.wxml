@@ -1,0 +1,26 @@
+<view class="message-wrap">
+<view class="left">
+<view class="head-wrap">
+<image src="../../../resources/images/icons/head.jpg" class="head"></image>
+</view>
+
+<text class="left-content">你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好</text>
+</view>
+
+<view class="right">
+<text class="right-content">你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好</text>
+<view class="head-wrap">
+<image src="../../../resources/images/icons/head.jpg" class="head"></image>
+</view>
+
+</view>
+
+
+</view>
+
+
+
+<view class="section-input">
+    <input  class="message-input" value='{{inputValue}}' />
+    <button bindtap="sendMessage" class="primary">发送</button>
+  </view>

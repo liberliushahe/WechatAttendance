@@ -1,0 +1,13 @@
+<view>
+<view class="search-container">
+<view class="search-text">
+<input form-type="text" value="" />
+</view>
+<view class="search">
+<image  class="search-image" src="../../../resources/images/icons/search.png" catchtap="search"></image>
+</view>
+
+
+</view>
+
+</view>

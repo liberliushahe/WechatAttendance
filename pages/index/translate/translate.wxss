@@ -1,0 +1,25 @@
+.search-container {
+  width: 94%;
+  display: flex;
+  height: 32px;
+  margin: auto;
+  flex-direction: row;
+  border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+.search-text {
+  width: 87%;
+  padding-left: 10px;
+  height: 32px;
+
+}
+.search {
+  width: 32px;
+  height: 32px;
+}
+.search-image {
+  width: 26px;
+  height: 26px;
+  margin-top: 3px;
+}

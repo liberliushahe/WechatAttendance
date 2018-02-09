@@ -9,14 +9,17 @@
     "pages/calendar/calendar",
     "pages/find/find",
     "pages/mime/mime",
-    "pages/calendar/photo/photo"
+    "pages/calendar/photo/photo",
+    "pages/mime/run/run",
+    "pages/mime/upload/upload",
+    "pages/index/translate/translate",
+    "pages/index/rebot/rebot"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00BFFF",
     "navigationBarTitleText": "智慧考勤",
-    "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#000000",

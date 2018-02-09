@@ -53,3 +53,10 @@
   width: 64rpx;
   height: 64rpx;
 }
+.contact{
+  display: absolute;
+  margin-left: 8rpx;
+  margin-top: 3px;
+  width: 200px;
+  font-size: 14px;
+}

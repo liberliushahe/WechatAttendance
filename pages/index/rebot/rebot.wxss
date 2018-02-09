@@ -1,0 +1,71 @@
+.message-wrap {
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+}
+.left {
+  width: 90%;
+  margin-top: 8px;
+  background-color: #fff;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  width: 90%;
+  margin-top: 8px;
+  background-color: #fff;
+  margin: auto;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.head_wrap {
+  width: 10%;
+}
+.head {
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+}
+
+.left-content {
+  margin-left: 10px;
+  width: 80%;
+  background-color: greenyellow;
+  padding: 5px;
+    border-radius: 3px;
+}
+
+.right-content {
+  margin-left: 10px;
+  width: 80%;
+  text-align: left;
+  background-color: greenyellow;
+  padding: 5px;
+    border-radius: 3px;
+}
+.section-input {
+  height: 100rpx;
+  background: #f4f4f4;
+  padding: 10rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.message-input {
+  width: 80%;
+  height: 98rpx;
+  border-bottom: 1px solid;
+}
+.btn-add {
+  width: 70px;
+  height: 40px;
+}

@@ -66,3 +66,8 @@
   margin-top: 4px;
   border-bottom-width: 90%;
 }
+.contact{
+  display: absolute;
+  left: 90%;
+  top:50%;
+}
