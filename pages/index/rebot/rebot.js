@@ -5,76 +5,88 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    message: '',
+    content:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
-  },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
   },
-
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
-  },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   },
-/**
- * 
- */
-sendMessage:function(){
   /**
-   *  wx.request({
-   url: 'http://www.tuling123.com/openapi/api?key=836cc333f85746d88296a75c59340ba0&info=hello',
-   success:function(res){
-
-   }
- })
+   * 发送消息按钮
    */
-  console.log("发送")
-}
+  sendMessage: function (event) {
+    var that=this
+    var mess = that.data.message;
+    if (mess == null || mess === '') {
+      wx.showToast({
+        title: '消息不能为空'
+      })
+    } else {
+      var appkey = "147c3451003239dcb1ac1dda32660d4e";
+      var datas=that.data.content
+      datas.push({"rebot":false,"text":mess})
+      that.setData({
+        content:datas
+      })
+      var url = "https://v.juhe.cn/robot/index?key=" + appkey + "&info=" + mess;
+      wx.request({
+        url: url,
+        success:function(e){
+          console.log(e)
+        }
+      })
+      datas.push({ "rebot": true, "text": "我是智能机器人" })
+      that.setData({
+        content: datas
+      })
+
+    }
+  },
+  /**
+   * 发送消息内容
+   */
+  inputMessage: function (e) {
+    var that = this
+    that.setData({
+      message: e.detail.value
+    })
+  }
 })

@@ -1,26 +1,15 @@
+<import src="rebot-item/rebot-item-template.wxml" />
 <view class="message-wrap">
-<view class="left">
-<view class="head-wrap">
-<image src="../../../resources/images/icons/head.jpg" class="head"></image>
-</view>
 
-<text class="left-content">你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好</text>
-</view>
+<block wx:for="{{content}}" wx:index="item" wx:key="content">
+<template is="rebot" wx:if="{{item.rebot}}" data="{{item}}" />
+<template is="user" wx:if="{{!item.rebot}}" data="{{item}}" />
 
-<view class="right">
-<text class="right-content">你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好你们好</text>
-<view class="head-wrap">
-<image src="../../../resources/images/icons/head.jpg" class="head"></image>
-</view>
+</block>
 
 </view>
-
-
-</view>
-
-
-
+<!--发送框-->
 <view class="section-input">
-    <input  class="message-input" value='{{inputValue}}' />
+    <input  class="message-input"  bindinput="inputMessage"/>
     <button bindtap="sendMessage" class="primary">发送</button>
   </view>

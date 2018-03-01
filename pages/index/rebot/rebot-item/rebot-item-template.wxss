@@ -1,0 +1,42 @@
+.left {
+  width: 94%;
+  margin-top: 8px;
+  background-color: #fff;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  width: 94%;
+  margin-top: 8px;
+  background-color: #fff;
+  margin: auto;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.head_wrap {
+  width: 10%;
+}
+
+.left-content {
+  margin-left: 10rpx;
+  width: 80%;
+  background-color: greenyellow;
+  padding: 5px;
+    border-radius: 3px;
+}
+
+.right-content {
+  margin-left: 10rpx;
+  width: 80%;
+  text-align: left;
+  background-color: greenyellow;
+  padding: 5px;
+    border-radius: 3px;
+}
