@@ -46,14 +46,6 @@
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
-  <view class="contact">
-<contact-button 
-  size="20"
-  session-from="weapp"
->
-</contact-button>微信客服
-  </view>
-
 </view> 
 <view class="copyright">
 <view class="copyright_info">copright-2017-liushahe</view>

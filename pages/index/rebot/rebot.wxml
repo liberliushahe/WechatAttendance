@@ -1,15 +1,14 @@
 <import src="rebot-item/rebot-item-template.wxml" />
-<view class="message-wrap">
+<scroll-view class="message-wrap" scroll-with-animation="true" bindscrolltolower="backbottom" scroll-y="true">
 
 <block wx:for="{{content}}" wx:index="item" wx:key="content">
 <template is="rebot" wx:if="{{item.rebot}}" data="{{item}}" />
 <template is="user" wx:if="{{!item.rebot}}" data="{{item}}" />
 
 </block>
-
-</view>
+</scroll-view>
 <!--发送框-->
 <view class="section-input">
-    <input  class="message-input"  bindinput="inputMessage"/>
+    <input  class="message-input" value="{{usermessage}}" bindinput="inputMessage"/>
     <button bindtap="sendMessage" class="primary">发送</button>
   </view>

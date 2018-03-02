@@ -10,9 +10,9 @@
 <!--用户会话-->
 <template name="user">
 <view class="right">
-<text class="right-content">你的你您飒飒撒撒所撒撒撒撒撒撒撒撒撒撒所撒所撒撒撒所{{item.text}}</text>
+<text class="right-content">{{item.text}}</text>
 <view class="head-wrap">
-<image src="../../../resources/images/icons/head.jpg" class="head"></image>
+<image  src="{{item.avatar}}"  class="head"></image>
 </view>
 </view>
 </template>
