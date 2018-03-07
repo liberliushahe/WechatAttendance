@@ -1,5 +1,5 @@
 <import src="rebot-item/rebot-item-template.wxml" />
-<scroll-view class="message-wrap" scroll-with-animation="true" bindscrolltolower="backbottom" scroll-y="true">
+<scroll-view class="message-wrap" style="height:1200rpx" scrollTop="{{scrollTop}}" scroll-with-animation="true" bindscrolltolower="backbottom" scroll-y="true" id="content">
 
 <block wx:for="{{content}}" wx:index="item" wx:key="content">
 <template is="rebot" wx:if="{{item.rebot}}" data="{{item}}" />

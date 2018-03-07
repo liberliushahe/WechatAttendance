@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+  content:'',
+  usercontent:''
   },
 
   /**
@@ -68,11 +69,46 @@ Page({
    * 翻译
    */
   search:function(){
-   wx.request({
-     url: '',
-     success:function(res){
-       console.log(res)
-     }
-   })
-  }
+      var that = this
+      var usercontent = that.data.usercontent;
+      if (usercontent == null || usercontent === '') {
+        wx.showToast({
+          title: '内容不能为空'
+        })
+      } else {
+        var appkey = "57992";
+        var sign = "81b5351e889649efb514ddf707a869c4";
+        var url = "https://route.showapi.com/1479-1?showapi_appid=" + appkey + "&content=" + usercontent + "&showapi_sign=" + sign;
+        wx.request({
+          url: url,
+          dataType: 'json',
+          success: function (result) {
+            if (result.data.showapi_res_code == 0) {
+          
+              that.setData({
+                content: result.data.showapi_res_body.fanyi,
+            
+              })
+            } else {
+              
+              that.setData({
+                content: ''
+               
+              })
+            }
+          }
+        })
+
+      }
+    
+  },
+  /**
+  * 发送消息内容
+  */
+  inputContent: function (e) {
+    var that = this
+    that.setData({
+      usercontent: e.detail.value
+    })
+  },
 })

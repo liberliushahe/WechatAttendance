@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/rebot/rebot",
+    
     "pages/index/index",
+    "pages/index/rebot/rebot",
     "pages/calendar/camera/camera",
     "pages/mime/info/info",
     "pages/mime/card/card",

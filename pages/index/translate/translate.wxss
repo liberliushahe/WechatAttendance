@@ -1,25 +1,32 @@
 .search-container {
   width: 94%;
   display: flex;
-  height: 32px;
+  height: 36px;
   margin: auto;
   flex-direction: row;
-  border: 1px solid gray;
+  border: 1px solid #EFEFF4;
     border-radius: 3px;
     margin-top: 50px;
 }
 .search-text {
   width: 87%;
   padding-left: 10px;
-  height: 32px;
-
+}
+.message-input{
+  height: 36px;
+  font-size: 17px;
 }
 .search {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 .search-image {
   width: 26px;
   height: 26px;
-  margin-top: 3px;
+  margin-top: 5px;
+}
+.translate{
+  margin-top: 10px;
+  width: 90%;
+  padding-left: 16px;
 }

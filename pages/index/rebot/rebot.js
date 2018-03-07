@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    scrollTop: 100,
     message: '',
     content: [],
     usermessage: '',
@@ -29,7 +30,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
@@ -78,7 +78,6 @@ Page({
         content: datas,
         usermessage: ''
       })
-       var i=400
       var url = "https://route.showapi.com/60-27?showapi_appid=" + appkey + "&info=" + mess + "&showapi_sign=" + sign;
       wx.request({
         url: url,
@@ -87,20 +86,22 @@ Page({
           if (result.data.showapi_res_code == 0) {
             datas.push({ "rebot": true, "text": result.data.showapi_res_body.text })
             that.setData({
-              content: datas
-            })
-            wx.pageScrollTo({
-              scrollTop: i+10,
-              duration: 300
+              content: datas,
+              scrollTop: that.data.scrollTop + 130
             })
           } else {
             datas.push({ "rebot": true, "text": "智能机器人罢工了" })
             that.setData({
-              content: datas
+              content: datas,
+              usermessage: ''
             })
           }
+          that.setData({
+            message: ''
+          })
         }
       })
+     
     }
   },
   /**
@@ -112,7 +113,4 @@ Page({
       message: e.detail.value
     })
   },
-  backbottom:function(e){
-   console.log(e)
-  }
 })

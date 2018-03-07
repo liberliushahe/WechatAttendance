@@ -37,6 +37,7 @@
   width: 80%;
   background-color: greenyellow;
   padding: 5px;
+  padding-top: 5px;
   border-radius: 3px;
 }
 
@@ -45,6 +46,7 @@
   width: 80%;                  
   background-color: greenyellow;
   padding: 5px;
+  padding-top: 5px;
   text-align: left;
   border-radius: 3px;
   word-break:break-all;
