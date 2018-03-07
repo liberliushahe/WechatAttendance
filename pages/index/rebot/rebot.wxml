@@ -1,6 +1,11 @@
 <import src="rebot-item/rebot-item-template.wxml" />
 <scroll-view class="message-wrap" style="height:1200rpx" scrollTop="{{scrollTop}}" scroll-with-animation="true" bindscrolltolower="backbottom" scroll-y="true" id="content">
-
+<view class="left">
+<view class="head-wrap">
+<image src="../../../resources/images/icons/rebot.jpg" class="head"></image>
+</view>
+<text class="left-content">您好！我是智慧机器人，您可以向我来提问,我会尽我所能帮助您</text>
+</view>
 <block wx:for="{{content}}" wx:index="item" wx:key="content">
 <template is="rebot" wx:if="{{item.rebot}}" data="{{item}}" />
 <template is="user" wx:if="{{!item.rebot}}" data="{{item}}" />
@@ -8,7 +13,12 @@
 </block>
 </scroll-view>
 <!--发送框-->
-<view class="section-input">
+<view class="section-input" wx:if="{{flag}}">
+    <image src="{{voice}}" class="head" bindtap="voice"></image>
     <input  class="message-input" value="{{usermessage}}" bindinput="inputMessage"/>
     <button bindtap="sendMessage" class="primary">发送</button>
+  </view>
+<view class="section-input" wx:if="{{!flag}}">
+    <image src="{{keyboard}}" class="head" bindtap="keyboard"></image>
+    <button  class="voice"  bindtouchstart="sendVoice" bindtouchend="touchup">按住说话</button>
   </view>

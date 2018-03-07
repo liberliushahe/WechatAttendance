@@ -17,11 +17,20 @@
   box-sizing: border-box;
 }
 .message-input {
-  width: 80%;
+  width: 72%;
   height: 74rpx;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #66CD00;
 }
 .btn-add {
   width: 70px;
   height: 40px;
+}
+.primary{
+  background-color: #66CD00;
+  width:56px;
+  height: 37px;
+  font-size: 14px;
+}
+.voice{
+  width: 300px;
 }

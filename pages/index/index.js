@@ -146,7 +146,11 @@ Page({
     })
   },
   /**
- * 扫一扫
+  *快捷按钮
+  *扫一扫
+  *翻译
+  *智能客服
+  *图像识别
  */
   menuevent: function (event) {
     var id = event.currentTarget.dataset.menuid;

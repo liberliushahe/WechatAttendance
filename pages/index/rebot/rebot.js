@@ -1,4 +1,4 @@
-
+const recorderManager = wx.getRecorderManager();
 Page({
 
   /**
@@ -9,7 +9,11 @@ Page({
     message: '',
     content: [],
     usermessage: '',
-    avatar: ''
+    avatar: '',
+    voice:"../../../resources/images/icons/voice.png",
+    keyboard:"../../../resources/images/icons/keyboard.png",
+    flag:true,
+    isSpeak:true
   },
 
   /**
@@ -36,6 +40,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
+  
 
   },
 
@@ -113,4 +119,56 @@ Page({
       message: e.detail.value
     })
   },
+  /**
+   * 语音识别
+   */
+  voice:function(){
+    var that = this
+    that.setData({
+      flag:false
+    })
+
+  },
+  /**
+   * 键盘
+   */
+  keyboard:function(){
+    var that = this
+    that.setData({
+      flag: true
+    })
+  },
+  /**
+   * 语音收集
+   */
+  sendVoice:function(){
+    console.log("voice ");
+    var that=this
+    //开始录音
+    recorderManager.onStart(() => {
+      console.log('recorder start')
+    })
+    //结束录音
+    recorderManager.onStop((res) => {
+    console.log('recorder stop', res)
+    const { tempFilePath } = res
+      })
+   const options = {
+     duration: 10000,
+     sampleRate: 44100,
+     numberOfChannels: 1,
+     encodeBitRate: 192000,
+     format: 'mp3',
+     frameSize: 50
+   }
+   recorderManager.start(options)
+  },
+  touchup:function(){
+    recorderManager.stop();
+    recorderManager.onStop((res) => {
+      this.tempFilePath = res.tempFilePath;
+      console.log('停止录音', res.tempFilePath)
+      const { tempFilePath } = res
+    })
+  }
 })
