@@ -158,7 +158,10 @@ Page({
       wx.scanCode({
         onlyFromCamera: true,
         success: (res) => {
-          console.log(res)
+          console.log(res.result)
+          wx.showToast({
+            title: '结果'+res.result,
+          })
         }
       })
     } else if (id == 2) {
