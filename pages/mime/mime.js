@@ -9,6 +9,7 @@ Page({
     usercard: "../../resources/images/icons/card.png",
     usersetting: "../../resources/images/icons/setting.png",
     big: "../../resources/images/icons/big.png",
+    about:"../../resources/images/icons/about.png"
   },
 
   /**
@@ -103,6 +104,11 @@ Page({
   ownupload:function(){
     wx.navigateTo({
       url: 'upload/upload',
+    })
+  },
+  about:function(){
+    wx.navigateTo({
+      url: 'about/about',
     })
   }
 })

@@ -14,7 +14,8 @@
     "pages/mime/run/run",
     "pages/mime/upload/upload",
     "pages/index/translate/translate",
-    "pages/index/card/punchcard"
+    "pages/index/card/punchcard",
+    "pages/mime/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",

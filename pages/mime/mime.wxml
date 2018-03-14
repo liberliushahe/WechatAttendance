@@ -27,12 +27,6 @@
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
-  <view class="page-body-setting-item">
- <view>
-  <image class="userinfoicon" src="{{usersetting}}"></image><text>个人收藏</text>
-   <image class="userinfodirection" src="{{big}}"></image>
-  </view>
-  </view> 
   <view class="page-body-setting-item" catchtap="ownrun">
  <view>
   <image class="userinfoicon" src="{{usersetting}}"></image><text>个人运动</text>
@@ -43,6 +37,12 @@
  <view class="page-body-setting-item" catchtap="ownupload">
  <view>
   <image class="userinfoicon" src="{{usersetting}}"></image><text>个人上传</text>
+   <image class="userinfodirection" src="{{big}}"></image>
+  </view>
+  </view> 
+    <view class="page-body-setting-item" catchtap="about">
+ <view>
+  <image class="userinfoicon" src="{{about}}"></image><text>关于我们</text>
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
