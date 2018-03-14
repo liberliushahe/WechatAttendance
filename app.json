@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/index/rebot/rebot",
     "pages/calendar/camera/camera",
@@ -14,8 +13,8 @@
     "pages/calendar/photo/photo",
     "pages/mime/run/run",
     "pages/mime/upload/upload",
-    "pages/index/translate/translate"
-    
+    "pages/index/translate/translate",
+    "pages/index/card/punchcard"
   ],
   "window": {
     "backgroundTextStyle": "light",

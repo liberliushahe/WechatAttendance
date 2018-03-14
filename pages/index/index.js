@@ -30,7 +30,7 @@ Page({
       {
         id: 4,
         url: '../../resources/images/menu/menu1.png',
-        name: '图像识别'
+        name: '打卡'
       }
 
     ]
@@ -171,6 +171,10 @@ Page({
     } else if (id == 3) {
       wx.navigateTo({
         url: 'rebot/rebot'
+      })
+    }else if(id==4){
+      wx.navigateTo({
+        url: 'card/punchcard',
       })
     }
 

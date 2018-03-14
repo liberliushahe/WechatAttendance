@@ -1,0 +1,14 @@
+<view class="wrap">
+<view wx:if="{{!iscard}}">
+<image class="punch" src="{{punchnone}}" bindtap="punchCard"></image>
+</view>
+<view wx:elif="{{iscard}}">
+<image class="punch" src="{{punchselected}}" bindtap="punchCardSelected"></image>
+</view>
+<view>
+<text>{{address}}</text>
+</view>
+<view>
+<text>{{date}}</text>
+</view>
+</view>

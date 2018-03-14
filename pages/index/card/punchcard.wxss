@@ -1,0 +1,9 @@
+.wrap{
+text-align: center;
+}
+.punch{
+  width: 128px;
+  height: 128px;
+  margin-top: 80px;
+
+}
