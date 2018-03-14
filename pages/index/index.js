@@ -29,7 +29,7 @@ Page({
       },
       {
         id: 4,
-        url: '../../resources/images/menu/menu1.png',
+        url: '../../resources/images/menu/card.png',
         name: '打卡'
       }
 
