@@ -8,6 +8,8 @@ Page({
    */
   data: {
     address: '',
+    cardData:[],
+    currentCard: {},
     date: '',
     iscard: false,
     punchnone: '../../../resources/images/icons/punchcard.png',
@@ -17,7 +19,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var that=this
+    var cardData= wx.getStorageSync("cardData")
+    console.log(cardData)
+    if (cardData){
+      that.setData({
+        cardData: cardData
+      })
+    }else{
+     var cardData=[]
+     wx.setStorageSync("cardData", cardData)
+    }
   },
 
 
@@ -49,6 +61,25 @@ Page({
               address: res.result.address,
               date: date
             })
+            var cardData = that.data.cardData
+            var currentCard = that.data.currentCard
+            currentCard.address = res.result.address
+            currentCard.date = date
+            currentCard.id = res.result.id
+            cardData.push(currentCard)
+         
+            //将数据存入微信缓存
+            wx.setStorage({
+              key: 'cardData',
+              data: cardData,
+            })
+
+            wx.getStorage({
+              key: 'cardData',
+              success: function (res) {
+                console.log(res)
+              },
+            })
           },
           fail: function (res) {
             console.log(res);
@@ -60,6 +91,11 @@ Page({
         })
         wx.showToast({
           title: '恭喜，打卡成功',
+        })
+        wx.vibrateLong({
+          success:function(res){
+            console.log("vib")
+          }
         })
       },
     })

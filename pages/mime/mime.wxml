@@ -21,7 +21,7 @@
    <image class="userinfodirection" src="{{big}}"></image>
   </view>
   </view> 
-    <view class="page-body-setting-item">
+    <view class="page-body-setting-item" catchtap="setting">
  <view>
   <image class="userinfoicon" src="{{usersetting}}"></image><text>个人设置</text>
    <image class="userinfodirection" src="{{big}}"></image>

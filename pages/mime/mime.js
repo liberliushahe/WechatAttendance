@@ -110,5 +110,10 @@ Page({
     wx.navigateTo({
       url: 'about/about',
     })
+  },
+  setting:function(){
+    wx.navigateTo({
+      url: 'setting/setting',
+    })
   }
 })

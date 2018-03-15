@@ -6,8 +6,8 @@
 
 .th{
   width:50%;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   justify-content: center;
   text-align: center;
   background: #00BFFF;
@@ -15,10 +15,11 @@
 }
 .tr{
   width: 100%;
+  margin-top: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
   display: flex;
-  height: 30px;
+  height: 35px;
   flex-direction: row;
   justify-content: center;
   align-items: center;

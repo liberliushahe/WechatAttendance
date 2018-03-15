@@ -1,5 +1,5 @@
 <!--pages/mime/card/card.wxml-->
-<view class="container">
+<view>
 <view class="card-head">
 <text>打卡数据</text>
 </view>
@@ -11,45 +11,10 @@
 </view>
 </view>
 
-
-<view class="tr bg-odd">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
+<view class="tr bg-odd" wx:for="{{card}}" wx:index="index" wx:item="item" wx:key="card">
+<view class="td">{{item.date}}</view>
+<view class="td">{{item.address}}</view>
 </view>
-
-
-
-<view class="tr bg-even">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
-</view>
-
-
-<view class="tr bg-odd">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
-</view>
-
-
-
-<view class="tr bg-even">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
-</view>
-
-<view class="tr bg-odd">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
-</view>
-
-
-
-<view class="tr bg-even">
-<view class="td">2018-1-31 12:12:13</view>
-<view class="td">甘肃兰州城关区365号</view>
-</view>
-
-
 
 </view>
 

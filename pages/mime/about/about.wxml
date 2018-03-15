@@ -1,7 +1,10 @@
 <view class="wrap">
-<text>关于我们</text>
-<view>
-<text>让打卡不在那么难</text>
+<view class="about">
+<text >关于我们</text>
+</view>
+
+<view class="desc">
+<text >让打卡不在那么难</text>
 </view>
 
 </view>
