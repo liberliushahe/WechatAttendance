@@ -1,9 +1,11 @@
 <view class="wrap">
 <view wx:if="{{!iscard}}">
 <image class="punch" src="{{punchnone}}" bindtap="punchCard"></image>
+
 </view>
 <view wx:elif="{{iscard}}">
 <image class="punch" src="{{punchselected}}" bindtap="punchCardSelected"></image>
+<view><text>今天已经打过卡了，明天再来吧！</text></view>
 </view>
 <view>
 <text>{{address}}</text>

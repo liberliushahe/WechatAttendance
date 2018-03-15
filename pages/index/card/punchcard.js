@@ -20,9 +20,23 @@ Page({
    */
   onReady: function () {
     var that=this
+    //加载数据之前首先判断当天是否有记录，如果没有记录则将iscard置为true
+    var date = util.formatTime(new Date)
     var cardData= wx.getStorageSync("cardData")
-    console.log(cardData)
+    var current = wx.getStorageSync("current")
+    if(current){
+      if (current==date.substring(0,10))
+      that.setData({
+        iscard: true,
+      })
+    }else{
+      that.setData({
+        iscard: false,
+      })
+    }
+
     if (cardData){
+      console.log(date.substring(0,10))
       that.setData({
         cardData: cardData
       })
@@ -73,12 +87,9 @@ Page({
               key: 'cardData',
               data: cardData,
             })
-
-            wx.getStorage({
-              key: 'cardData',
-              success: function (res) {
-                console.log(res)
-              },
+            wx.setStorage({
+              key: 'current',
+              data: date.substring(0, 10),
             })
           },
           fail: function (res) {
@@ -93,9 +104,7 @@ Page({
           title: '恭喜，打卡成功',
         })
         wx.vibrateLong({
-          success:function(res){
-            console.log("vib")
-          }
+          
         })
       },
     })

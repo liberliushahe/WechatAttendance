@@ -81,10 +81,7 @@ Page({
             wx.authorize({
               scope: 'scope.userInfo',
               success() {
-                wx.showModal({
-                  title: 'ceshi',
-                  content: 'ceshi',
-                })
+               
               }
             })
           }
