@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/rebot/rebot",
+    "pages/calendar/camera/camera",
+    "pages/mime/info/info",
+    "pages/mime/card/card",
+    "pages/channel/channel",
+    "pages/index/article/article",
+    "pages/calendar/calendar",
+    "pages/find/find",
+    "pages/mime/mime",
+    "pages/calendar/photo/photo",
+    "pages/mime/run/run",
+    "pages/mime/upload/upload",
+    "pages/index/translate/translate",
+    "pages/index/card/punchcard",
+    "pages/mime/about/about",
+    "pages/mime/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "智慧考勤",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "blue",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/icons/index.png",
+        "selectedIconPath": "resources/images/icons/index-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "iconPath": "resources/images/icons/channel.png",
+        "selectedIconPath": "resources/images/icons/channel-selected.png",
+        "text": "频道"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "resources/images/icons/calendar.png",
+        "selectedIconPath": "resources/images/icons/calendar-selected.png",
+        "text": "日历"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "iconPath": "resources/images/icons/find.png",
+        "selectedIconPath": "resources/images/icons/find-selected.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mime/mime",
+        "iconPath": "resources/images/icons/own.png",
+        "selectedIconPath": "resources/images/icons/own-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}
